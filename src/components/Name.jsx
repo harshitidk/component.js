@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import '../sass/name.css';
 
 function Name()
 {
@@ -11,7 +12,7 @@ function Name()
     return (
         <div>
             <input value={name} onChange={changeName} />
-            <p>Name : {name}</p>
+            <p>name : {name}</p>
         </div>
     )
 }
