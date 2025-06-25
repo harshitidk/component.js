@@ -41,3 +41,26 @@ button
     display: flex;
     gap: 10px;
 }
+
+.todo-list 
+{
+    display: flex;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 12px; 
+}
+
+.todo
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px 0px;
+    margin-bottom: 20px;
+}
+
+.checkbox
+{
+    width: 30px;
+    margin: 0px;
+}
