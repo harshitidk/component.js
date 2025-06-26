@@ -24,7 +24,11 @@ function Input(){
     return(<div>
         <h2>my todo list</h2>
         <div className="todo">
-            {todo.map((todos, index) => <div className="todo-list" key={todos.id}>
+        {todo.map((todos, index) => <div className="todo-list" key={todos.id}>
+            <div className="svg-dad">
+            <div className="svg"><svg  xmlns="http://www.w3.org/2000/svg"  width="16"  height="16"  viewBox="0 0 20 20"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-up"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 15l6 -6l6 6" /></svg></div>
+            <div className="svg"><svg  xmlns="http://www.w3.org/2000/svg"  width="16"  height="16"  viewBox="0 0 20 20"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg></div>
+            </div>
             <input className="checkbox" type="checkbox" 
             onChange={() => handleRemoveTodo(index)} />
             <label>{todos.text}</label>

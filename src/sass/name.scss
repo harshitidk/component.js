@@ -45,7 +45,7 @@ button
 .todo-list 
 {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     padding: 8px;
     border-radius: 12px; 
 }
@@ -61,6 +61,31 @@ button
 
 .checkbox
 {
-    width: 30px;
+    width: 24px;
+    height: 24px;
     margin: 0px;
+}
+
+.svg
+{
+    outline: 1px solid rgb(191, 191, 191);
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3px;
+    padding-bottom: 3px;
+
+    &:hover
+    {
+        background-color: aqua;
+    }
+}
+
+.svg-dad
+{
+    display: flex;
+    gap: 6px;
 }
