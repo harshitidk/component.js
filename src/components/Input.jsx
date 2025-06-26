@@ -25,12 +25,17 @@ function Input(){
         <h2>my todo list</h2>
         <div className="todo">
             {todo.map((todos, index) => <div className="todo-list" key={todos.id}>
-            <input className="checkbox" type="checkbox" onChange={() => handleRemoveTodo(index)} />
+            <input className="checkbox" type="checkbox" 
+            onChange={() => handleRemoveTodo(index)} />
             <label>{todos.text}</label>
             </div>)}
         </div>
         <div className="add-button">
-            <input id="new-todo" type="text" />
+            <input id="new-todo"
+            type="text"
+            onKeyDown={(event) => {
+                if (event.key === "Enter") handleAddTodo();
+            }} />
             <button onClick={handleAddTodo}>Add</button>
         </div>
     </div>)
