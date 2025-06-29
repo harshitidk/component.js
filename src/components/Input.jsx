@@ -23,6 +23,7 @@ function Input(){
 
     function handleup(index){
         if (index>0){
+            console.log(window);
             const updated = [...todo];
             [updated[index],updated[index-1]]=[updated[index-1],updated[index]]
             setTodo(updated);
